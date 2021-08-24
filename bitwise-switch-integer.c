@@ -10,7 +10,7 @@ int main()
     scanf("%d", &a);
     printf("B = ");
     scanf("%d", &b);
-    printf("Enter 1 for & operator, enter 2 for | operator and enter 3 for ^ operator");
+    printf("Enter 1 for & operator, enter 2 for | operator, enter 3 for ^ operator, enter 4 for << and enter 5 for >>");
     printf("\n>>");
     scanf("%d", &d);
     switch(d)
@@ -28,6 +28,16 @@ int main()
         case 3:
                 c = a ^ b;
                 printf("%d ^ %d = %d", a, b, c);
+                break;
+            
+        case 4:
+                c = a << b;
+                printf("%d<<%d = %d", a, b, c);
+                break;
+            
+        case 5:
+                c = a >> b;
+                printf("%d>>%d = %d", a, b, c);
                 break;
                 
         default:
